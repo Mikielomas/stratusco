@@ -1,84 +1,65 @@
-# Stratus Co - GitHub Pages Setup
+# Stratus Co
 
-This folder contains the files for the Stratus Co landing page and legal documents.
+Landing page and legal documents for Stratus Co, a trading name of Arcus Cloud Computing Pty Ltd.
+
+## Live Site
+
+- **Homepage:** https://mikielomas.github.io/stratusco/
+- **Privacy Policy:** https://mikielomas.github.io/stratusco/privacy.html
+- **Terms of Service:** https://mikielomas.github.io/stratusco/terms.html
 
 ## Files
 
-- `index.html` - Landing page
-- `privacy.html` - Privacy Policy (covers all platform integrations)
-- `terms.html` - Terms of Service
+| File | Purpose |
+|------|---------|
+| `index.html` | Landing page |
+| `privacy.html` | Privacy Policy (covers all platform integrations) |
+| `terms.html` | Terms of Service |
 
-## Setup Instructions
+## Platform Integrations Covered
 
-### Option 1: Create a new repository (Recommended)
+The privacy policy covers data handling for:
+- Pinterest
+- Twitter/X
+- Facebook & Instagram (Meta)
+- YouTube (Google)
+- LinkedIn
+- TikTok
+- Threads
+- Stripe (payments)
+- Amazon Associates (affiliate)
 
-1. **Create a new repo on GitHub:**
-   - Go to https://github.com/new
-   - Repository name: `stratusco` (or `stratus-co`)
-   - Make it **Public**
-   - Don't initialize with README
+## Updating Content
 
-2. **Push these files:**
+1. Edit the HTML files
+2. Commit and push:
    ```bash
-   cd "D:\Projects\Side Projects\Passive Income\docs\github-pages"
-   git init
    git add .
-   git commit -m "Initial commit - Stratus Co landing page"
-   git branch -M main
-   git remote add origin https://github.com/Mikielomas/stratusco.git
-   git push -u origin main
+   git commit -m "Update [description]"
+   git push
    ```
+3. Changes deploy automatically via GitHub Pages
 
-3. **Enable GitHub Pages:**
-   - Go to repo Settings → Pages
-   - Source: "Deploy from a branch"
-   - Branch: `main` / `/ (root)`
-   - Click Save
-
-4. **Your URL will be:**
-   ```
-   https://mikielomas.github.io/stratusco/
-   ```
-
-### Option 2: Use username.github.io (Primary domain)
-
-If you want `https://mikielomas.github.io/` as your main site:
-
-1. Create repo named exactly `Mikielomas.github.io`
-2. Push these files to that repo
-3. It will automatically deploy to `https://mikielomas.github.io/`
-
-## URLs for Platform Applications
-
-Once deployed, use these URLs:
-
-| Platform | URL to Provide |
-|----------|----------------|
-| Website/Homepage | `https://mikielomas.github.io/stratusco/` |
-| Privacy Policy | `https://mikielomas.github.io/stratusco/privacy.html` |
-| Terms of Service | `https://mikielomas.github.io/stratusco/terms.html` |
-
-## Custom Domain (Optional Later)
+## Custom Domain (Future)
 
 If you purchase `stratusco.com`:
 
 1. Add a `CNAME` file with content: `stratusco.com`
 2. Configure DNS at your registrar:
-   - A record: `185.199.108.153` (and .109, .110, .111)
+   - A records: `185.199.108.153`, `.109`, `.110`, `.111`
    - Or CNAME: `mikielomas.github.io`
-3. Enable HTTPS in GitHub Pages settings
+3. Enable "Enforce HTTPS" in GitHub Pages settings
 
-## Updating Content
+## Brand Notes
 
-If you change the brand name later (e.g., to Nimbus Co), just:
-1. Find and replace "Stratus Co" with new name
-2. Find and replace "stratusco" with new handle
-3. Update email addresses
-4. Commit and push
+- **Parent Entity:** Arcus Cloud Computing Pty Ltd
+- **Trading Name:** Stratus Co
+- **Contact Emails:** privacy@stratusco.com, legal@stratusco.com
+- **Jurisdiction:** Australia
 
-## Notes
+## Related
 
-- The privacy policy covers all platforms: Pinterest, Twitter, Meta, YouTube, LinkedIn, TikTok, Threads, Stripe, Amazon
-- FTC affiliate disclosure is mentioned
-- Australian law jurisdiction (adjust if needed)
-- References Arcus Cloud Computing Pty Ltd as parent entity
+This site supports the Passive Income project. See the main project for:
+- Full branding strategy: `docs/BRANDING.md`
+- Platform compliance: `docs/PLATFORM_COMPLIANCE.md`
+- Marketplace compliance: `docs/MARKETPLACE_COMPLIANCE.md`
