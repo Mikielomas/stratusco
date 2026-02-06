@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TikTok OAuth - Redirecting...</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f5f5f5; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center; }
+        p { color: #666; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Connecting TikTok...</h2>
+        <p>Redirecting to your local app. If nothing happens, check that your app is running on localhost:3001.</p>
+    </div>
+    <script>
+        const params = window.location.search;
+        window.location.href = "http://localhost:3001/api/connections/tiktok/callback" + params;
+    </script>
+</body>
+</html>
